@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Free Quote | Pietra Vera Tile, Marble &amp; Granite Flooring</title>
+  <meta name="description" content="Request a free flooring quotation from Pietra Vera. Schedule an on-site laser measurement and stone sample consultation for your tile, marble, or granite flooring project.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <!-- Prevent Theme & Direction Flash -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('pietra_vera_theme') || 'light';
+        var savedDir = localStorage.getItem('pietra_vera_dir') || 'ltr';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('dir', savedDir);
+      } catch (e) {}
+    })();
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Luxury Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       STICKY PREMIUM NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="Pietra Vera Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Pietra Vera</span>
+          <span class="brand-tagline">Architectural Stone &amp; Tile</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu-desktop">
+          <li class="nav-item-custom has-dropdown">
+            <button type="button" class="nav-link-custom" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+              Home
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="dropdown-menu-custom" role="menu">
+              <a href="index.html" class="dropdown-item-custom" role="menuitem">
+                <span class="dropdown-item-badge">01</span>
+                <span>
+                  <span class="dropdown-item-title">Home 1 — Architectural</span>
+                  <span class="dropdown-item-desc">Cinematic editorial &amp; stone showcase</span>
+                </span>
+              </a>
+              <a href="home-2.html" class="dropdown-item-custom" role="menuitem">
+                <span class="dropdown-item-badge">02</span>
+                <span>
+                  <span class="dropdown-item-title">Home 2 — Stone Atelier</span>
+                  <span class="dropdown-item-desc">Interactive studio &amp; live cost estimator</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item-custom">
+            <a href="services.html" class="nav-link-custom">Services</a>
+          </li>
+          <li class="nav-item-custom">
+            <a href="gallery.html" class="nav-link-custom">Gallery</a>
+          </li>
+          <li class="nav-item-custom">
+            <a href="about.html" class="nav-link-custom">About</a>
+          </li>
+          <li class="nav-item-custom">
+            <a href="contact.html" class="nav-link-custom active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navbar-actions">
+        <button type="button" class="theme-toggle-btn rtl-toggle-btn header-btn-desktop" data-rtl-toggle aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+        <button type="button" class="theme-toggle-btn header-btn-desktop" data-theme-toggle aria-label="Toggle color theme"></button>
+        <a href="#quote-form" class="btn-luxury btn-luxury-primary navbar-cta header-btn-desktop">
+          Get a Free Quote
+        </a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-expanded="false" aria-controls="mobileNavDrawer" aria-label="Open navigation menu">
+          <span class="hamburger-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <button type="button" class="mobile-dropdown-trigger" id="mobileHomeDropdownBtn" aria-expanded="false">
+            <span>Home Experiences</span>
+            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="mobile-submenu" id="mobileHomeSubmenu">
+            <a href="index.html" class="mobile-submenu-link">
+              <span>Home 1 — Architectural Editorial</span>
+              <span>01</span>
+            </a>
+            <a href="home-2.html" class="mobile-submenu-link">
+              <span>Home 2 — Stone Atelier &amp; Studio</span>
+              <span>02</span>
+            </a>
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="services.html" class="mobile-nav-link">Services</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="about.html" class="mobile-nav-link">About</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-nav-link active">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile & Tablet Menu Action Controls (Moved from Header) -->
+      <div class="mobile-menu-actions">
+        <div class="mobile-menu-toggles-row">
+          <span class="mobile-toggles-label">Preferences</span>
+          <div class="mobile-menu-toggles-group">
+            <button type="button" class="theme-toggle-btn rtl-toggle-btn" data-rtl-toggle aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+            <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle color theme"></button>
+          </div>
+        </div>
+        <a href="#quote-form" class="btn-luxury btn-luxury-primary w-100 mobile-menu-quote-btn">
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         1. CONTACT ARCHITECTURAL HERO BANNER
+         ====================================================================== -->
+    <section class="page-hero-banner">
+      <div class="hero-bg-media">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=85" alt="Pietra Vera showroom and consultation desk" fetchpriority="high">
+      </div>
+      <div class="hero-bg-overlay"></div>
+
+      <div class="container position-relative" style="z-index: 2;">
+        <nav class="breadcrumb-luxury" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span style="color: var(--accent-light);">Contact &amp; Free Quotation</span>
+        </nav>
+        <div class="row align-items-end justify-content-between g-4">
+          <div class="col-lg-8">
+            <h1 class="mb-3">
+              Request Your <span class="italic-accent">Complimentary</span> Flooring Quotation
+            </h1>
+            <p class="hero-lead mb-0">
+              Complete our specification form below or contact our flagship stone gallery directly. Every inquiry includes a complimentary laser subfloor evaluation and curated material sample presentation.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="tel:+18005557866" class="btn-luxury btn-luxury-light-outline">
+              Direct Desk: (800) 555-7866
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. FREE FLOORING QUOTATION FORM & BUSINESS CONTACT DETAILS
+         ====================================================================== -->
+    <section class="section-padding" id="quote-form">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Left Column: Business Contact Info, Hours & Socials -->
+          <div class="col-lg-5" data-gsap-reveal>
+            <span class="eyebrow">Atelier &amp; Estimation Desk</span>
+            <h2 class="section-title">
+              Connect With Our <span class="italic-accent">Stone Specialists</span>
+            </h2>
+            <p class="text-secondary mb-4">
+              Whether you have architectural blueprints ready for bidding or need guidance selecting between porcelain tile, natural marble, and structural granite, our senior estimators respond within one business day.
+            </p>
+
+            <!-- Contact Info Cards -->
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div class="p-4 border" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                <span class="d-block text-uppercase small fw-semibold mb-1" style="font-size: 0.7rem; letter-spacing: 0.12em; color: var(--accent-primary);">Flagship Showroom &amp; Slab Vault</span>
+                <strong class="font-serif fs-5 d-block mb-1">480 Madison Design District, Suite 300</strong>
+                <span class="small text-secondary d-block">New York, NY 10022 (Private Parking Available)</span>
+              </div>
+
+              <div class="p-4 border" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                <span class="d-block text-uppercase small fw-semibold mb-1" style="font-size: 0.7rem; letter-spacing: 0.12em; color: var(--accent-primary);">Direct Telephone &amp; Email</span>
+                <div class="mb-1">
+                  <strong class="small text-muted me-2">Estimation Desk:</strong>
+                  <a href="tel:+18005557866" class="fw-semibold">(800) 555-7866</a>
+                </div>
+                <div class="mb-1">
+                  <strong class="small text-muted me-2">Showroom Line:</strong>
+                  <a href="tel:+12125550194" class="fw-semibold">(212) 555-0194</a>
+                </div>
+                <div>
+                  <strong class="small text-muted me-2">Specifications:</strong>
+                  <a href="mailto:atelier@pietravera.com" class="fw-semibold">atelier@pietravera.com</a>
+                </div>
+              </div>
+
+              <div class="p-4 border" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                <span class="d-block text-uppercase small fw-semibold mb-2" style="font-size: 0.7rem; letter-spacing: 0.12em; color: var(--accent-primary);">Showroom &amp; Consultation Hours</span>
+                <div class="d-flex justify-content-between small mb-1">
+                  <span class="text-secondary">Monday &ndash; Friday:</span>
+                  <strong>8:30 AM &ndash; 6:30 PM</strong>
+                </div>
+                <div class="d-flex justify-content-between small mb-1">
+                  <span class="text-secondary">Saturday (Showroom &amp; Site Visits):</span>
+                  <strong>10:00 AM &ndash; 4:00 PM</strong>
+                </div>
+                <div class="d-flex justify-content-between small">
+                  <span class="text-secondary">Sunday:</span>
+                  <strong>By Private Appointment</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+              <span class="d-block text-uppercase small fw-semibold mb-2" style="font-size: 0.72rem; letter-spacing: 0.12em; color: var(--text-muted);">Follow Our Architectural Installations</span>
+              <div class="d-flex gap-2">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-luxury-outline py-2 px-3">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-luxury-outline py-2 px-3">LinkedIn</a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-luxury-outline py-2 px-3">Pinterest</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Free Flooring Quotation Request Form -->
+          <div class="col-lg-7" data-gsap-reveal>
+            <div class="quote-form-card">
+              <div class="border-bottom pb-3 mb-4" style="border-color: var(--border-color) !important;">
+                <span class="eyebrow mb-1">24-Hour Turnaround</span>
+                <h3 class="font-serif fs-2 mb-1">Free Flooring Quotation Request Form</h3>
+                <p class="small text-secondary mb-0">
+                  All fields marked with an asterisk (*) are required for an accurate engineering &amp; material estimate.
+                </p>
+              </div>
+
+              <!-- Interactive Quotation Form -->
+              <form id="flooringQuoteForm" novalidate>
+                <div class="row g-4">
+                  <!-- Full Name -->
+                  <div class="col-md-6">
+                    <label for="clientName" class="form-label-luxury">Full Name *</label>
+                    <input type="text" id="clientName" name="clientName" class="form-control-luxury" placeholder="e.g., Alexander Sterling" required>
+                    <div class="invalid-feedback-luxury">Please enter your full name.</div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="col-md-6">
+                    <label for="clientEmail" class="form-label-luxury">Email Address *</label>
+                    <input type="email" id="clientEmail" name="clientEmail" class="form-control-luxury" placeholder="alexander@domain.com" required>
+                    <div class="invalid-feedback-luxury">Please enter a valid email address.</div>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="col-md-6">
+                    <label for="clientPhone" class="form-label-luxury">Phone Number *</label>
+                    <input type="tel" id="clientPhone" name="clientPhone" class="form-control-luxury" placeholder="(212) 555-0148" required>
+                    <div class="invalid-feedback-luxury">Please enter a valid contact phone number.</div>
+                  </div>
+
+                  <!-- Property Type (Residential / Commercial) -->
+                  <div class="col-md-6">
+                    <label for="propertyType" class="form-label-luxury">Property Type *</label>
+                    <select id="propertyType" name="propertyType" class="form-select-luxury" required>
+                      <option value="Residential" selected>Residential (Private Home / Penthouse / Condo)</option>
+                      <option value="Commercial">Commercial (Hotel / Lobby / Retail / Office)</option>
+                    </select>
+                    <div class="invalid-feedback-luxury">Please select a property classification.</div>
+                  </div>
+
+                  <!-- Project Type Selection (Tiles / Marble / Granite) -->
+                  <div class="col-12">
+                    <span class="form-label-luxury">Select Primary Flooring Material (Project Type) *</span>
+                    <div class="stone-radio-grid" role="radiogroup" aria-label="Project Type Selection">
+                      <label class="stone-radio-label">
+                        <input type="radio" name="projectType" value="Tiles" class="stone-radio-input">
+                        <span class="stone-radio-box">
+                          <span class="font-serif fs-5 d-block">Tiles</span>
+                          <span class="small text-muted" style="font-size: 0.72rem;">Porcelain &amp; Ceramic</span>
+                        </span>
+                      </label>
+
+                      <label class="stone-radio-label">
+                        <input type="radio" name="projectType" value="Marble" class="stone-radio-input" checked>
+                        <span class="stone-radio-box">
+                          <span class="font-serif fs-5 d-block">Marble</span>
+                          <span class="small text-muted" style="font-size: 0.72rem;">Natural Slabs &amp; Inlay</span>
+                        </span>
+                      </label>
+
+                      <label class="stone-radio-label">
+                        <input type="radio" name="projectType" value="Granite" class="stone-radio-input">
+                        <span class="stone-radio-box">
+                          <span class="font-serif fs-5 d-block">Granite</span>
+                          <span class="small text-muted" style="font-size: 0.72rem;">Structural &amp; Quartzite</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Approximate Project Area -->
+                  <div class="col-md-6">
+                    <label for="projectArea" class="form-label-luxury">Approximate Project Area (Sq. Ft.) *</label>
+                    <input type="number" id="projectArea" name="projectArea" class="form-control-luxury" placeholder="e.g., 1250" min="20" max="500000" required>
+                    <div class="invalid-feedback-luxury">Please enter an approximate area (between 20 and 500,000 sq. ft.).</div>
+                  </div>
+
+                  <!-- Project Location -->
+                  <div class="col-md-6">
+                    <label for="projectLocation" class="form-label-luxury">Project Location (City / State) *</label>
+                    <input type="text" id="projectLocation" name="projectLocation" class="form-control-luxury" placeholder="e.g., Tribeca, NY or Greenwich, CT" required>
+                    <div class="invalid-feedback-luxury">Please enter the project city or neighborhood.</div>
+                  </div>
+
+                  <!-- Project Details / Message -->
+                  <div class="col-12">
+                    <label for="projectDetails" class="form-label-luxury">Project Details &amp; Architectural Requirements *</label>
+                    <textarea id="projectDetails" name="projectDetails" rows="4" class="form-control-luxury" placeholder="Describe the rooms involved, preferred stone color/finish, existing floor condition, or target installation timeline..." required></textarea>
+                    <div class="invalid-feedback-luxury">Please share brief details about your flooring project.</div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12">
+                    <button type="submit" class="btn-luxury btn-luxury-primary w-100 py-3">
+                      Submit Quote Request
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                    <p class="small text-muted text-center mt-2 mb-0">
+                      Your information is kept strictly confidential. No obligation or automated spam.
+                    </p>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Confirmation Receipt Box (Displayed after valid submission) -->
+              <div id="quoteSuccessConfirmation" style="display: none;" class="p-4 border" role="status" aria-live="polite">
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3" style="border-color: var(--border-color) !important;">
+                  <span class="badge rounded-0 px-3 py-2" style="background-color: var(--accent-primary); color: #fff;">Quotation Dossier Registered</span>
+                  <span class="small text-muted">Ref: <strong id="confirmRefCode">PV-2026-8419</strong></span>
+                </div>
+                <h4 class="font-serif fs-2 mb-2">Thank You, <span id="confirmClientName">Valued Client</span>.</h4>
+                <p class="text-secondary mb-3">
+                  Your flooring quotation request has been assigned to our Senior Architectural Estimator. We will contact you within 24 hours to confirm your complimentary laser site measurement and curate stone samples for your space.
+                </p>
+                <div class="p-3 mb-4 border" style="background-color: var(--bg-primary); border-color: var(--border-color) !important;">
+                  <span class="d-block text-uppercase small text-muted" style="font-size: 0.68rem; letter-spacing: 0.1em;">Registered Scope Summary</span>
+                  <strong class="small" id="confirmScopeText">Marble Flooring (Residential) &mdash; Approx. 1,250 sq. ft.</strong>
+                </div>
+                <button type="button" id="quoteResetBtn" class="btn-luxury btn-luxury-outline">
+                  Submit Another Project Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. LOCATION & ARCHITECTURAL SHOWROOM MAP SECTION
+         ====================================================================== -->
+    <section class="section-padding-sm bg-secondary-surface border-top-subtle">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mb-4 g-3">
+          <div class="col-lg-7">
+            <span class="eyebrow">Visit Our Stone Vault</span>
+            <h2 class="section-title mb-0">
+              Flagship Showroom &amp; <span class="italic-accent">Slab Viewing Gallery</span>
+            </h2>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <a href="https://maps.google.com/?q=480+Madison+Ave+New+York+NY+10022" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-luxury-outline">
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="border p-2" style="background-color: var(--bg-surface); border-color: var(--border-strong) !important;">
+          <div class="ratio ratio-21x9" style="min-height: 340px;">
+            <iframe
+              title="Pietra Vera Flagship Stone Showroom Location Map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-73.9825%2C40.7545%2C-73.9685%2C40.7625&amp;layer=mapnik&amp;marker=40.7585%2C-73.9755"
+              style="border: 0; filter: grayscale(0.35) contrast(1.05);"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       PROFESSIONAL MULTI-COLUMN FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">Pietra Vera</span>
+              <span class="brand-tagline">Architectural Stone &amp; Tile</span>
+            </span>
+          </a>
+          <p class="small mt-3 mb-4 footer-info-text" style="max-width: 36ch;">
+            Premier tile, natural marble, and structural granite flooring contractor serving luxury residential estates, penthouses, and commercial landmarks since 1998.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 20l4-9"></path><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75-1.554 3.75-4a5 5 0 1 0-9.7 1.7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1 (Architectural)</a></li>
+            <li><a href="home-2.html">Home 2 (Stone Atelier)</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
+            <li><a href="about.html">About &amp; Heritage</a></li>
+            <li><a href="contact.html">Contact &amp; Quote</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-heading">Flooring Expertise</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#tile-flooring">Large-Format Porcelain Tile</a></li>
+            <li><a href="services.html#marble-flooring">Bookmatched Marble Slabs</a></li>
+            <li><a href="services.html#granite-flooring">Structural Granite Flooring</a></li>
+            <li><a href="services.html#installation-process">Laser Subfloor Leveling</a></li>
+            <li><a href="services.html#commercial-residential">Radiant Heated Floors</a></li>
+            <li><a href="gallery.html#transformations">Before &amp; After Restoration</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Showroom &amp; Catalog</h4>
+          <p class="small mb-2 footer-info-text">
+            <strong>Flagship Stone Gallery:</strong><br>
+            480 Madison Design District, Suite 300<br>
+            New York, NY 10022
+          </p>
+          <p class="small mb-3 footer-info-text">
+            <strong>Direct Line:</strong> <a href="tel:+18005557866" class="footer-accent-link">(800) 555-7866</a><br>
+            <strong>Email:</strong> <a href="mailto:atelier@pietravera.com" class="footer-accent-link">atelier@pietravera.com</a>
+          </p>
+          <form class="footer-subscribe-form" novalidate>
+            <label for="footerEmail6" class="visually-hidden">Email address for Stone Catalog</label>
+            <div class="d-flex gap-2">
+              <input type="email" id="footerEmail6" class="form-control-luxury footer-input-field py-2 px-3 small" placeholder="Enter email for Spec Book" required>
+              <button type="submit" class="btn-luxury btn-luxury-primary py-2 px-3">Send</button>
+            </div>
+            <div class="footer-form-feedback small mt-2" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div>
+          &copy; 2026 Pietra Vera Architectural Stone &amp; Tile Contracting LLC. All Rights Reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="about.html">TCNA &amp; ANSI A108 Certified</a>
+          <a href="contact.html">Licensed &amp; Insured (#PV-994820)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

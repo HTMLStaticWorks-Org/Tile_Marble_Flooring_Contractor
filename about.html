@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Pietra Vera | Heritage, Craftsmanship &amp; Stone Mastery</title>
+  <meta name="description" content="Learn about Pietra Vera's 28-year heritage in architectural tile, natural marble, and structural granite flooring installation, quarry curation, and TCNA quality standards.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <!-- Prevent Theme & Direction Flash -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('pietra_vera_theme') || 'light';
+        var savedDir = localStorage.getItem('pietra_vera_dir') || 'ltr';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('dir', savedDir);
+      } catch (e) {}
+    })();
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Luxury Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       STICKY PREMIUM NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="Pietra Vera Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Pietra Vera</span>
+          <span class="brand-tagline">Architectural Stone &amp; Tile</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu-desktop">
+          <li class="nav-item-custom has-dropdown">
+            <button type="button" class="nav-link-custom" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+              Home
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="dropdown-menu-custom" role="menu">
+              <a href="index.html" class="dropdown-item-custom" role="menuitem">
+                <span class="dropdown-item-badge">01</span>
+                <span>
+                  <span class="dropdown-item-title">Home 1 — Architectural</span>
+                  <span class="dropdown-item-desc">Cinematic editorial &amp; stone showcase</span>
+                </span>
+              </a>
+              <a href="home-2.html" class="dropdown-item-custom" role="menuitem">
+                <span class="dropdown-item-badge">02</span>
+                <span>
+                  <span class="dropdown-item-title">Home 2 — Stone Atelier</span>
+                  <span class="dropdown-item-desc">Interactive studio &amp; live cost estimator</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item-custom">
+            <a href="services.html" class="nav-link-custom">Services</a>
+          </li>
+          <li class="nav-item-custom">
+            <a href="gallery.html" class="nav-link-custom">Gallery</a>
+          </li>
+          <li class="nav-item-custom">
+            <a href="about.html" class="nav-link-custom active">About</a>
+          </li>
+          <li class="nav-item-custom">
+            <a href="contact.html" class="nav-link-custom">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navbar-actions">
+        <button type="button" class="theme-toggle-btn rtl-toggle-btn header-btn-desktop" data-rtl-toggle aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+        <button type="button" class="theme-toggle-btn header-btn-desktop" data-theme-toggle aria-label="Toggle color theme"></button>
+        <a href="contact.html#quote-form" class="btn-luxury btn-luxury-primary navbar-cta header-btn-desktop">
+          Get a Free Quote
+        </a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-expanded="false" aria-controls="mobileNavDrawer" aria-label="Open navigation menu">
+          <span class="hamburger-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <button type="button" class="mobile-dropdown-trigger" id="mobileHomeDropdownBtn" aria-expanded="false">
+            <span>Home Experiences</span>
+            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="mobile-submenu" id="mobileHomeSubmenu">
+            <a href="index.html" class="mobile-submenu-link">
+              <span>Home 1 — Architectural Editorial</span>
+              <span>01</span>
+            </a>
+            <a href="home-2.html" class="mobile-submenu-link">
+              <span>Home 2 — Stone Atelier &amp; Studio</span>
+              <span>02</span>
+            </a>
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="services.html" class="mobile-nav-link">Services</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="about.html" class="mobile-nav-link active">About</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile & Tablet Menu Action Controls (Moved from Header) -->
+      <div class="mobile-menu-actions">
+        <div class="mobile-menu-toggles-row">
+          <span class="mobile-toggles-label">Preferences</span>
+          <div class="mobile-menu-toggles-group">
+            <button type="button" class="theme-toggle-btn rtl-toggle-btn" data-rtl-toggle aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+            <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle color theme"></button>
+          </div>
+        </div>
+        <a href="contact.html#quote-form" class="btn-luxury btn-luxury-primary w-100 mobile-menu-quote-btn">
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         1. ABOUT ARCHITECTURAL HERO BANNER
+         ====================================================================== -->
+    <section class="page-hero-banner">
+      <div class="hero-bg-media">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=85" alt="Pietra Vera architectural stone atelier craftsmanship" fetchpriority="high">
+      </div>
+      <div class="hero-bg-overlay"></div>
+
+      <div class="container position-relative" style="z-index: 2;">
+        <nav class="breadcrumb-luxury" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span style="color: var(--accent-light);">About Pietra Vera</span>
+        </nav>
+        <div class="row align-items-end justify-content-between g-4">
+          <div class="col-lg-8">
+            <h1 class="mb-3">
+              Three Decades of <span class="italic-accent">Architectural Stone</span> &amp; Tile Mastery
+            </h1>
+            <p class="hero-lead mb-0">
+              Founded in 1998 by third-generation Italian stone setters, Pietra Vera bridges old-world quarry artistry with laser-guided structural engineering.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html#quote-form" class="btn-luxury btn-luxury-primary">
+              Schedule a Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. COMPANY OVERVIEW & HERITAGE STORY
+         ====================================================================== -->
+    <section class="section-padding border-bottom-subtle">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-gsap-reveal>
+            <span class="eyebrow">Our Story &amp; Provenance</span>
+            <h2 class="section-title">
+              Built on the Belief That a Floor Is the <span class="italic-accent">Fifth Elevation</span> of Architecture
+            </h2>
+            <p class="text-secondary mb-4">
+              When master stone mason Lorenzo Bellini founded Pietra Vera in 1998, he recognized a critical flaw in modern luxury construction: extraordinary marble, granite, and porcelain slabs were frequently compromised by rushed subfloor preparation and uncalibrated setting.
+            </p>
+            <p class="text-secondary mb-4">
+              Over the past 28 years, Pietra Vera has grown into an elite architectural flooring contractor trusted by premier residential architects, private estate owners, and luxury hospitality developers. We never subcontract our installations—every setter on our roster completes a rigorous four-year apprenticeship in substrate leveling, CAD bookmatching, and in-situ diamond finishing.
+            </p>
+
+            <div class="row g-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <div class="col-4">
+                <strong class="font-serif fs-1 d-block" style="color: var(--accent-primary); line-height: 1;">1998</strong>
+                <span class="small text-muted text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.08em;">Year Founded</span>
+              </div>
+              <div class="col-4">
+                <strong class="font-serif fs-1 d-block" style="color: var(--accent-primary); line-height: 1;">42</strong>
+                <span class="small text-muted text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.08em;">In-House Artisans</span>
+              </div>
+              <div class="col-4">
+                <strong class="font-serif fs-1 d-block" style="color: var(--accent-primary); line-height: 1;">2.4M+</strong>
+                <span class="small text-muted text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.08em;">Sq. Ft. Installed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-gsap-reveal>
+            <div class="row g-3">
+              <div class="col-7">
+                <div class="border p-2 h-100" style="background-color: var(--bg-surface); border-color: var(--border-strong) !important;">
+                  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Luxury marble floor craftsmanship" class="w-100 h-100" style="object-fit: cover; min-height: 360px;">
+                </div>
+              </div>
+              <div class="col-5 d-flex flex-column gap-3">
+                <div class="border p-2 flex-grow-1" style="background-color: var(--bg-surface); border-color: var(--border-strong) !important;">
+                  <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80" alt="Calacatta slab detailing" class="w-100 h-100" style="object-fit: cover;">
+                </div>
+                <div class="p-4 border" style="background-color: var(--bg-dark-section); color: #F5F2EB; border-color: var(--border-strong) !important;">
+                  <span class="font-serif fs-3 d-block mb-1" style="color: var(--accent-light);">0.0%</span>
+                  <span class="small d-block" style="color: #A8A29E;">Subcontracted Labor. 100% Certified In-House Master Setters.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. QUALITY STANDARDS, MATERIALS & QUARRY EXPERTISE
+         ====================================================================== -->
+    <section class="section-padding bg-secondary-surface border-bottom-subtle">
+      <div class="container">
+        <div class="row align-items-end justify-content-between mb-5 g-4">
+          <div class="col-lg-7" data-gsap-reveal>
+            <span class="eyebrow">Engineering &amp; Sourcing Standards</span>
+            <h2 class="section-title mb-0">
+              Uncompromising <span class="italic-accent">Quality Benchmarks</span> &amp; Quarry Curation
+            </h2>
+          </div>
+          <div class="col-lg-5" data-gsap-reveal>
+            <p class="section-subtitle mb-0">
+              We exceed North American and European stone setting codes on every residential and commercial floor we touch.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 row-cards-2col">
+          <div class="col-lg-4 col-md-6" data-gsap-reveal>
+            <div class="process-step-card">
+              <span class="eyebrow mb-2">Standard 01</span>
+              <h3 class="h4 font-serif mb-3">TCNA &amp; ANSI A108.02 Compliance</h3>
+              <p class="small text-secondary mb-3">
+                All substrates are prepared to meet or exceed Tile Council of North America (TCNA) EJ171 movement joint guidelines and ANSI A108 flatness tolerances before setting begins.
+              </p>
+              <div class="pt-3 border-top small fw-semibold" style="border-color: var(--border-color) !important; color: var(--accent-primary);">
+                Verified by Laser Profilometer
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-gsap-reveal>
+            <div class="process-step-card">
+              <span class="eyebrow mb-2">Standard 02</span>
+              <h3 class="h4 font-serif mb-3">Direct Quarry Block Inspection</h3>
+              <p class="small text-secondary mb-3">
+                We reject commercial-grade slabs with resin patches, structural fissures, or inconsistent background tones. Our buyers source First-Choice (Prima Scelta) blocks directly from Italy, Spain, and Brazil.
+              </p>
+              <div class="pt-3 border-top small fw-semibold" style="border-color: var(--border-color) !important; color: var(--accent-primary);">
+                14 Direct Quarry Partnerships
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12" data-gsap-reveal>
+            <div class="process-step-card">
+              <span class="eyebrow mb-2">Standard 03</span>
+              <h3 class="h4 font-serif mb-3">Zero-VOC Adhesives &amp; Epoxy Systems</h3>
+              <p class="small text-secondary mb-3">
+                We utilize hospital-grade, GREENGUARD Gold certified mortars, waterproof membranes, and non-yellowing epoxy grouts that safeguard indoor air quality in luxury residences.
+              </p>
+              <div class="pt-3 border-top small fw-semibold" style="border-color: var(--border-color) !important; color: var(--accent-primary);">
+                LEED &amp; Wellness Building Ready
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. MISSION, CORE VALUES & WHY CUSTOMERS TRUST US
+         ====================================================================== -->
+    <section class="section-padding border-bottom-subtle">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5" data-gsap-reveal>
+            <span class="eyebrow">Mission &amp; Core Values</span>
+            <h2 class="section-title">
+              Our Architectural <span class="italic-accent">Covenant</span> With Every Client
+            </h2>
+            <p class="text-secondary mb-4">
+              Our mission is to transform architectural floors into enduring works of stone craftsmanship—delivered on schedule, within the agreed quotation, and with absolute respect for your property.
+            </p>
+            <div class="p-4 border" style="background-color: var(--bg-surface); border-color: var(--border-strong) !important;">
+              <blockquote class="font-serif fs-4 fst-italic mb-2">
+                &ldquo;True luxury in stone setting is measured twenty years after installation—when not a single joint has shifted and the surface still catches the morning light like glass.&rdquo;
+              </blockquote>
+              <cite class="small text-muted d-block fst-normal">&mdash; Lorenzo Bellini, Founder &amp; Master Stone Setter</cite>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="row g-4 row-cards-2col">
+              <div class="col-md-6" data-gsap-reveal>
+                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <h3 class="h4 font-serif mb-2">1. Precision Without Compromise</h3>
+                  <p class="small text-secondary mb-0">
+                    Whether setting a 300 sq. ft. powder room mosaic or a 12,000 sq. ft. granite concourse, we hold every cut, mitre, and threshold to sub-millimeter tolerances.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-gsap-reveal>
+                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <h3 class="h4 font-serif mb-2">2. Fixed-Price Transparency</h3>
+                  <p class="small text-secondary mb-0">
+                    Our itemized quotations detail slab waste factors, subfloor leveling compounds, membranes, and finishing—eliminating unexpected change orders.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-gsap-reveal>
+                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <h3 class="h4 font-serif mb-2">3. White-Glove Site Stewardship</h3>
+                  <p class="small text-secondary mb-0">
+                    We protect pathways with Ram Board, isolate work zones with HEPA air scrubbers, and leave your residence immaculate at the close of every workday.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-gsap-reveal>
+                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <h3 class="h4 font-serif mb-2">4. 15-Year Structural Bond Warranty</h3>
+                  <p class="small text-secondary mb-0">
+                    We stand behind every installation with a written 15-year warranty against bond failure, subfloor delamination, and structural joint cracking.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. LEADERSHIP & MASTER ARTISANS
+         ====================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 64ch;" data-gsap-reveal>
+          <span class="eyebrow">Atelier Leadership</span>
+          <h2 class="section-title">
+            Meet the <span class="italic-accent">Master Artisans</span> &amp; Engineers
+          </h2>
+          <p class="section-subtitle mx-auto">
+            Every Pietra Vera project is personally overseen by our senior leadership from initial laser measurement to final inspection.
+          </p>
+        </div>
+
+        <div class="row g-4 row-cards-2col">
+          <div class="col-lg-4 col-md-6" data-gsap-reveal>
+            <div class="architectural-card">
+              <div class="card-media-wrap">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Lorenzo Bellini - Founder & Master Stone Setter" loading="lazy">
+                <span class="card-tag-badge">Founder &amp; Master Setter</span>
+              </div>
+              <div class="card-body-luxury">
+                <h3 class="card-title-luxury mb-1">Lorenzo Bellini</h3>
+                <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">34 Years in Natural Stone</span>
+                <p class="small text-secondary mb-0">
+                  Trained in Carrara and Milan, Lorenzo oversees quarry block curation, bookmatched dry-lay approvals, and bespoke architectural inlays.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-gsap-reveal>
+            <div class="architectural-card">
+              <div class="card-media-wrap">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Clara Vance - Director of Architectural Specifications" loading="lazy">
+                <span class="card-tag-badge">Head of Specifications</span>
+              </div>
+              <div class="card-body-luxury">
+                <h3 class="card-title-luxury mb-1">Clara Vance, CSI</h3>
+                <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">Architectural Estimator &amp; Trade Lead</span>
+                <p class="small text-secondary mb-0">
+                  Collaborates directly with homeowners, architects, and interior designers on CAD layouts, slip-resistance compliance, and turnkey quotations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12" data-gsap-reveal>
+            <div class="architectural-card">
+              <div class="card-media-wrap">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Elena Moretti - Director of Marble Restoration & Finishing" loading="lazy">
+                <span class="card-tag-badge">Surface Finishing Lead</span>
+              </div>
+              <div class="card-body-luxury">
+                <h3 class="card-title-luxury mb-1">Elena Moretti</h3>
+                <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">Master of Diamond Honing &amp; Sealing</span>
+                <p class="small text-secondary mb-0">
+                  Leads our in-situ planetary diamond honing, mirror polishing, and fluoropolymer sealing division for residential and commercial commissions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. FINAL CALL TO ACTION
+         ====================================================================== -->
+    <section class="section-padding bg-dark-architectural">
+      <div class="container text-center">
+        <span class="eyebrow eyebrow-light">Work With Our Atelier</span>
+        <h2 class="section-title mx-auto mb-3" style="max-width: 24ch;">
+          Discuss Your Flooring Project With Our <span class="italic-accent">Master Estimators</span>
+        </h2>
+        <p class="mx-auto mb-4" style="color: var(--text-on-dark-muted); max-width: 58ch;">
+          Whether you are renovating a private residence or specifying stone for a commercial landmark, our team is ready to assist.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="contact.html#quote-form" class="btn-luxury btn-luxury-primary">
+            Get a Free Quote
+          </a>
+          <a href="services.html" class="btn-luxury btn-luxury-light-outline">
+            Explore Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       PROFESSIONAL MULTI-COLUMN FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">Pietra Vera</span>
+              <span class="brand-tagline">Architectural Stone &amp; Tile</span>
+            </span>
+          </a>
+          <p class="small mt-3 mb-4 footer-info-text" style="max-width: 36ch;">
+            Premier tile, natural marble, and structural granite flooring contractor serving luxury residential estates, penthouses, and commercial landmarks since 1998.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 20l4-9"></path><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75-1.554 3.75-4a5 5 0 1 0-9.7 1.7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1 (Architectural)</a></li>
+            <li><a href="home-2.html">Home 2 (Stone Atelier)</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
+            <li><a href="about.html">About &amp; Heritage</a></li>
+            <li><a href="contact.html">Contact &amp; Quote</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-heading">Flooring Expertise</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#tile-flooring">Large-Format Porcelain Tile</a></li>
+            <li><a href="services.html#marble-flooring">Bookmatched Marble Slabs</a></li>
+            <li><a href="services.html#granite-flooring">Structural Granite Flooring</a></li>
+            <li><a href="services.html#installation-process">Laser Subfloor Leveling</a></li>
+            <li><a href="services.html#commercial-residential">Radiant Heated Floors</a></li>
+            <li><a href="gallery.html#transformations">Before &amp; After Restoration</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Showroom &amp; Catalog</h4>
+          <p class="small mb-2 footer-info-text">
+            <strong>Flagship Stone Gallery:</strong><br>
+            480 Madison Design District, Suite 300<br>
+            New York, NY 10022
+          </p>
+          <p class="small mb-3 footer-info-text">
+            <strong>Direct Line:</strong> <a href="tel:+18005557866" class="footer-accent-link">(800) 555-7866</a><br>
+            <strong>Email:</strong> <a href="mailto:atelier@pietravera.com" class="footer-accent-link">atelier@pietravera.com</a>
+          </p>
+          <form class="footer-subscribe-form" novalidate>
+            <label for="footerEmail5" class="visually-hidden">Email address for Stone Catalog</label>
+            <div class="d-flex gap-2">
+              <input type="email" id="footerEmail5" class="form-control-luxury footer-input-field py-2 px-3 small" placeholder="Enter email for Spec Book" required>
+              <button type="submit" class="btn-luxury btn-luxury-primary py-2 px-3">Send</button>
+            </div>
+            <div class="footer-form-feedback small mt-2" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div>
+          &copy; 2026 Pietra Vera Architectural Stone &amp; Tile Contracting LLC. All Rights Reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="about.html">TCNA &amp; ANSI A108 Certified</a>
+          <a href="contact.html">Licensed &amp; Insured (#PV-994820)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
