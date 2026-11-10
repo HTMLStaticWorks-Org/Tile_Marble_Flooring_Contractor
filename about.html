@@ -34,7 +34,15 @@
   <header class="site-header" id="siteHeader">
     <div class="container navbar-container">
       <a href="index.html" class="brand-logo" aria-label="Pietra Vera Home">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="36" height="36" rx="2" fill="rgba(166, 130, 75, 0.12)" stroke="currentColor" stroke-width="1.8" />
+            <line x1="2" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1.4" opacity="0.85" />
+            <line x1="20" y1="2" x2="20" y2="38" stroke="currentColor" stroke-width="1.4" opacity="0.85" />
+            <polygon points="20,8 32,20 20,32 8,20" fill="rgba(166, 130, 75, 0.28)" stroke="currentColor" stroke-width="1.5" />
+            <polygon points="20,14 26,20 20,26 14,20" fill="currentColor" />
+          </svg>
+        </span>
         <span class="brand-text">
           <span class="brand-name">Pietra Vera</span>
           <span class="brand-tagline">Architectural Stone &amp; Tile</span>
@@ -69,10 +77,10 @@
             <a href="services.html" class="nav-link-custom">Services</a>
           </li>
           <li class="nav-item-custom">
-            <a href="gallery.html" class="nav-link-custom">Gallery</a>
+            <a href="about.html" class="nav-link-custom active">About</a>
           </li>
           <li class="nav-item-custom">
-            <a href="about.html" class="nav-link-custom active">About</a>
+            <a href="gallery.html" class="nav-link-custom">Gallery</a>
           </li>
           <li class="nav-item-custom">
             <a href="contact.html" class="nav-link-custom">Contact</a>
@@ -119,10 +127,10 @@
           <a href="services.html" class="mobile-nav-link">Services</a>
         </li>
         <li class="mobile-nav-item">
-          <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+          <a href="about.html" class="mobile-nav-link active">About</a>
         </li>
         <li class="mobile-nav-item">
-          <a href="about.html" class="mobile-nav-link active">About</a>
+          <a href="gallery.html" class="mobile-nav-link">Gallery</a>
         </li>
         <li class="mobile-nav-item">
           <a href="contact.html" class="mobile-nav-link">Contact</a>
@@ -213,15 +221,15 @@
           </div>
 
           <div class="col-lg-6" data-gsap-reveal>
-            <div class="row g-3">
+            <div class="row g-3 h-100">
               <div class="col-7">
                 <div class="border p-2 h-100" style="background-color: var(--bg-surface); border-color: var(--border-strong) !important;">
-                  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Luxury marble floor craftsmanship" class="w-100 h-100" style="object-fit: cover; min-height: 360px;">
+                  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Luxury marble floor craftsmanship" class="w-100 h-100" style="object-fit: cover; object-position: center 40%; min-height: 400px; aspect-ratio: 4/5;">
                 </div>
               </div>
-              <div class="col-5 d-flex flex-column gap-3">
+              <div class="col-5 d-flex flex-column gap-3 justify-content-between">
                 <div class="border p-2 flex-grow-1" style="background-color: var(--bg-surface); border-color: var(--border-strong) !important;">
-                  <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80" alt="Calacatta slab detailing" class="w-100 h-100" style="object-fit: cover;">
+                  <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Calacatta slab detailing" class="w-100 h-100" style="object-fit: cover; object-position: center; min-height: 180px; aspect-ratio: 4/3;">
                 </div>
                 <div class="p-4 border" style="background-color: var(--bg-dark-section); color: #F5F2EB; border-color: var(--border-strong) !important;">
                   <span class="font-serif fs-3 d-block mb-1" style="color: var(--accent-light);">0.0%</span>
@@ -255,12 +263,14 @@
 
         <div class="row g-4 row-cards-2col">
           <div class="col-lg-4 col-md-6" data-gsap-reveal>
-            <div class="process-step-card">
-              <span class="eyebrow mb-2">Standard 01</span>
-              <h3 class="h4 font-serif mb-3">TCNA &amp; ANSI A108.02 Compliance</h3>
-              <p class="small text-secondary mb-3">
-                All substrates are prepared to meet or exceed Tile Council of North America (TCNA) EJ171 movement joint guidelines and ANSI A108 flatness tolerances before setting begins.
-              </p>
+            <div class="process-step-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <span class="eyebrow mb-2">Standard 01</span>
+                <h3 class="h4 font-serif mb-3">TCNA &amp; ANSI A108.02 Compliance</h3>
+                <p class="small text-secondary mb-3">
+                  All substrates are prepared to meet or exceed Tile Council of North America (TCNA) EJ171 movement joint guidelines and ANSI A108 flatness tolerances before setting begins.
+                </p>
+              </div>
               <div class="pt-3 border-top small fw-semibold" style="border-color: var(--border-color) !important; color: var(--accent-primary);">
                 Verified by Laser Profilometer
               </div>
@@ -268,25 +278,29 @@
           </div>
 
           <div class="col-lg-4 col-md-6" data-gsap-reveal>
-            <div class="process-step-card">
-              <span class="eyebrow mb-2">Standard 02</span>
-              <h3 class="h4 font-serif mb-3">Direct Quarry Block Inspection</h3>
-              <p class="small text-secondary mb-3">
-                We reject commercial-grade slabs with resin patches, structural fissures, or inconsistent background tones. Our buyers source First-Choice (Prima Scelta) blocks directly from Italy, Spain, and Brazil.
-              </p>
+            <div class="process-step-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <span class="eyebrow mb-2">Standard 02</span>
+                <h3 class="h4 font-serif mb-3">Direct Quarry Block Inspection</h3>
+                <p class="small text-secondary mb-3">
+                  We reject commercial-grade slabs with resin patches, structural fissures, or inconsistent background tones. Our buyers source First-Choice (Prima Scelta) blocks directly from Italy, Spain, and Brazil.
+                </p>
+              </div>
               <div class="pt-3 border-top small fw-semibold" style="border-color: var(--border-color) !important; color: var(--accent-primary);">
                 14 Direct Quarry Partnerships
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-12" data-gsap-reveal>
-            <div class="process-step-card">
-              <span class="eyebrow mb-2">Standard 03</span>
-              <h3 class="h4 font-serif mb-3">Zero-VOC Adhesives &amp; Epoxy Systems</h3>
-              <p class="small text-secondary mb-3">
-                We utilize hospital-grade, GREENGUARD Gold certified mortars, waterproof membranes, and non-yellowing epoxy grouts that safeguard indoor air quality in luxury residences.
-              </p>
+          <div class="col-lg-4 col-md-6" data-gsap-reveal>
+            <div class="process-step-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <span class="eyebrow mb-2">Standard 03</span>
+                <h3 class="h4 font-serif mb-3">Zero-VOC Adhesives &amp; Epoxy Systems</h3>
+                <p class="small text-secondary mb-3">
+                  We utilize hospital-grade, GREENGUARD Gold certified mortars, waterproof membranes, and non-yellowing epoxy grouts that safeguard indoor air quality in luxury residences.
+                </p>
+              </div>
               <div class="pt-3 border-top small fw-semibold" style="border-color: var(--border-color) !important; color: var(--accent-primary);">
                 LEED &amp; Wellness Building Ready
               </div>
@@ -321,38 +335,46 @@
           <div class="col-lg-7">
             <div class="row g-4 row-cards-2col">
               <div class="col-md-6" data-gsap-reveal>
-                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
-                  <h3 class="h4 font-serif mb-2">1. Precision Without Compromise</h3>
-                  <p class="small text-secondary mb-0">
-                    Whether setting a 300 sq. ft. powder room mosaic or a 12,000 sq. ft. granite concourse, we hold every cut, mitre, and threshold to sub-millimeter tolerances.
-                  </p>
+                <div class="p-4 border h-100 d-flex flex-column justify-content-between" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <div>
+                    <h3 class="h4 font-serif mb-2">1. Precision Without Compromise</h3>
+                    <p class="small text-secondary mb-0">
+                      Whether setting a 300 sq. ft. powder room mosaic or a 12,000 sq. ft. granite concourse, we hold every cut, mitre, and threshold to sub-millimeter tolerances.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div class="col-md-6" data-gsap-reveal>
-                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
-                  <h3 class="h4 font-serif mb-2">2. Fixed-Price Transparency</h3>
-                  <p class="small text-secondary mb-0">
-                    Our itemized quotations detail slab waste factors, subfloor leveling compounds, membranes, and finishing—eliminating unexpected change orders.
-                  </p>
+                <div class="p-4 border h-100 d-flex flex-column justify-content-between" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <div>
+                    <h3 class="h4 font-serif mb-2">2. Fixed-Price Transparency</h3>
+                    <p class="small text-secondary mb-0">
+                      Our itemized quotations detail slab waste factors, subfloor leveling compounds, membranes, and finishing—eliminating unexpected change orders.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div class="col-md-6" data-gsap-reveal>
-                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
-                  <h3 class="h4 font-serif mb-2">3. White-Glove Site Stewardship</h3>
-                  <p class="small text-secondary mb-0">
-                    We protect pathways with Ram Board, isolate work zones with HEPA air scrubbers, and leave your residence immaculate at the close of every workday.
-                  </p>
+                <div class="p-4 border h-100 d-flex flex-column justify-content-between" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <div>
+                    <h3 class="h4 font-serif mb-2">3. White-Glove Site Stewardship</h3>
+                    <p class="small text-secondary mb-0">
+                      We protect pathways with Ram Board, isolate work zones with HEPA air scrubbers, and leave your residence immaculate at the close of every workday.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div class="col-md-6" data-gsap-reveal>
-                <div class="p-4 border h-100" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
-                  <h3 class="h4 font-serif mb-2">4. 15-Year Structural Bond Warranty</h3>
-                  <p class="small text-secondary mb-0">
-                    We stand behind every installation with a written 15-year warranty against bond failure, subfloor delamination, and structural joint cracking.
-                  </p>
+                <div class="p-4 border h-100 d-flex flex-column justify-content-between" style="background-color: var(--bg-surface); border-color: var(--border-color) !important;">
+                  <div>
+                    <h3 class="h4 font-serif mb-2">4. 15-Year Structural Bond Warranty</h3>
+                    <p class="small text-secondary mb-0">
+                      We stand behind every installation with a written 15-year warranty against bond failure, subfloor delamination, and structural joint cracking.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,49 +400,55 @@
 
         <div class="row g-4 row-cards-2col">
           <div class="col-lg-4 col-md-6" data-gsap-reveal>
-            <div class="architectural-card">
-              <div class="card-media-wrap">
+            <div class="architectural-card h-100 d-flex flex-column">
+              <div class="card-media-wrap aspect-portrait">
                 <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Lorenzo Bellini - Founder & Master Stone Setter" loading="lazy">
                 <span class="card-tag-badge">Founder &amp; Master Setter</span>
               </div>
-              <div class="card-body-luxury">
-                <h3 class="card-title-luxury mb-1">Lorenzo Bellini</h3>
-                <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">34 Years in Natural Stone</span>
-                <p class="small text-secondary mb-0">
-                  Trained in Carrara and Milan, Lorenzo oversees quarry block curation, bookmatched dry-lay approvals, and bespoke architectural inlays.
-                </p>
+              <div class="card-body-luxury d-flex flex-column flex-grow-1 justify-content-between">
+                <div>
+                  <h3 class="card-title-luxury mb-1">Lorenzo Bellini</h3>
+                  <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">34 Years in Natural Stone</span>
+                  <p class="small text-secondary mb-0">
+                    Trained in Carrara and Milan, Lorenzo oversees quarry block curation, bookmatched dry-lay approvals, and bespoke architectural inlays.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-gsap-reveal>
-            <div class="architectural-card">
-              <div class="card-media-wrap">
+            <div class="architectural-card h-100 d-flex flex-column">
+              <div class="card-media-wrap aspect-portrait">
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Clara Vance - Director of Architectural Specifications" loading="lazy">
                 <span class="card-tag-badge">Head of Specifications</span>
               </div>
-              <div class="card-body-luxury">
-                <h3 class="card-title-luxury mb-1">Clara Vance, CSI</h3>
-                <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">Architectural Estimator &amp; Trade Lead</span>
-                <p class="small text-secondary mb-0">
-                  Collaborates directly with homeowners, architects, and interior designers on CAD layouts, slip-resistance compliance, and turnkey quotations.
-                </p>
+              <div class="card-body-luxury d-flex flex-column flex-grow-1 justify-content-between">
+                <div>
+                  <h3 class="card-title-luxury mb-1">Clara Vance, CSI</h3>
+                  <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">Architectural Estimator &amp; Trade Lead</span>
+                  <p class="small text-secondary mb-0">
+                    Collaborates directly with homeowners, architects, and interior designers on CAD layouts, slip-resistance compliance, and turnkey quotations.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-12" data-gsap-reveal>
-            <div class="architectural-card">
-              <div class="card-media-wrap">
+          <div class="col-lg-4 col-md-6" data-gsap-reveal>
+            <div class="architectural-card h-100 d-flex flex-column">
+              <div class="card-media-wrap aspect-portrait">
                 <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Elena Moretti - Director of Marble Restoration & Finishing" loading="lazy">
                 <span class="card-tag-badge">Surface Finishing Lead</span>
               </div>
-              <div class="card-body-luxury">
-                <h3 class="card-title-luxury mb-1">Elena Moretti</h3>
-                <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">Master of Diamond Honing &amp; Sealing</span>
-                <p class="small text-secondary mb-0">
-                  Leads our in-situ planetary diamond honing, mirror polishing, and fluoropolymer sealing division for residential and commercial commissions.
-                </p>
+              <div class="card-body-luxury d-flex flex-column flex-grow-1 justify-content-between">
+                <div>
+                  <h3 class="card-title-luxury mb-1">Elena Moretti</h3>
+                  <span class="small text-uppercase fw-semibold d-block mb-3" style="letter-spacing: 0.1em; color: var(--accent-primary);">Master of Diamond Honing &amp; Sealing</span>
+                  <p class="small text-secondary mb-0">
+                    Leads our in-situ planetary diamond honing, mirror polishing, and fluoropolymer sealing division for residential and commercial commissions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -460,7 +488,15 @@
       <div class="row g-5">
         <div class="col-lg-4 col-md-6">
           <a href="index.html" class="brand-logo mb-3">
-            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="36" height="36" rx="2" fill="rgba(166, 130, 75, 0.12)" stroke="currentColor" stroke-width="1.8" />
+                <line x1="2" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1.4" opacity="0.85" />
+                <line x1="20" y1="2" x2="20" y2="38" stroke="currentColor" stroke-width="1.4" opacity="0.85" />
+                <polygon points="20,8 32,20 20,32 8,20" fill="rgba(166, 130, 75, 0.28)" stroke="currentColor" stroke-width="1.5" />
+                <polygon points="20,14 26,20 20,26 14,20" fill="currentColor" />
+              </svg>
+            </span>
             <span class="brand-text">
               <span class="brand-name">Pietra Vera</span>
               <span class="brand-tagline">Architectural Stone &amp; Tile</span>
@@ -488,8 +524,8 @@
             <li><a href="index.html">Home 1 (Architectural)</a></li>
             <li><a href="home-2.html">Home 2 (Stone Atelier)</a></li>
             <li><a href="services.html">Our Services</a></li>
-            <li><a href="gallery.html">Project Gallery</a></li>
             <li><a href="about.html">About &amp; Heritage</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
             <li><a href="contact.html">Contact &amp; Quote</a></li>
           </ul>
         </div>
